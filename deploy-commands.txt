@@ -1,0 +1,27 @@
+# GitHub Pages Deployment Commands
+# Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual values
+
+# Step 1: Remove the old remote repository
+git remote remove origin
+
+# Step 2: Add your new repository (REPLACE THE URL BELOW!)
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+
+# Step 3: Add all your files
+git add .
+
+# Step 4: Commit your changes
+git commit -m "Deploy portfolio website - Sojitra Preet"
+
+# Step 5: Push to GitHub
+git push -u origin master
+
+# After pushing, go to your repository on GitHub:
+# 1. Click "Settings" tab
+# 2. Scroll down to "Pages" in left sidebar
+# 3. Under "Source", select "Deploy from a branch"
+# 4. Select "master" branch and "/ (root)" folder
+# 5. Click "Save"
+# 6. Wait 1-2 minutes
+# 7. Your site will be live at: https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
+
