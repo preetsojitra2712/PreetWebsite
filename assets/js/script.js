@@ -325,21 +325,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
     // Map display text to page data attribute
-    let pageName = this.innerHTML.toLowerCase();
-    if (pageName === "engineering notes") {
+    let pageName = this.innerHTML.toLowerCase().trim();
+    
+    // Handle special cases for renamed sections - more robust matching
+    if (pageName.includes("engineering") || pageName === "engineering notes") {
       pageName = "blog";
-    } else if (pageName === "projects + experience") {
+    } else if (pageName.includes("projects") || pageName.includes("experience") || pageName === "projects + experience") {
       pageName = "portfolio";
     }
 
+    // Find and activate the matching page
     for (let i = 0; i < pages.length; i++) {
-      if (pageName === pages[i].dataset.page) {
+      const pageDataPage = pages[i].dataset.page;
+      
+      if (pageName === pageDataPage) {
+        // Remove active from all pages and links first
+        for (let j = 0; j < pages.length; j++) {
+          pages[j].classList.remove("active");
+          if (navigationLinks[j]) {
+            navigationLinks[j].classList.remove("active");
+          }
+        }
+        // Add active to the matching page and link
         pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+        if (navigationLinks[i]) {
+          navigationLinks[i].classList.add("active");
+        }
         window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        return; // Exit early once found
       }
     }
 
