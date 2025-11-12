@@ -328,6 +328,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
     let pageName = this.innerHTML.toLowerCase();
     if (pageName === "engineering notes") {
       pageName = "blog";
+    } else if (pageName === "projects + experience") {
+      pageName = "portfolio";
     }
 
     for (let i = 0; i < pages.length; i++) {

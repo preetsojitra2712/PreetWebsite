@@ -203,7 +203,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects + Experience</button>
           </li>
 
           <li class="navbar-item">
@@ -660,7 +660,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects + Experience</h2>
         </header>
 
         <section class="projects">
@@ -830,6 +830,126 @@
                   
                   <p style="color: var(--light-gray-70); font-size: 12px; margin-top: 10px; margin-bottom: 0;">
                     <strong>Tech Stack:</strong> Python, Flask, Scikit-learn, Pandas, NumPy, HTML/CSS
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div style="padding: 30px; background: var(--eerie-black-2); border-radius: 16px; min-height: 200px; display: flex; flex-direction: column; justify-content: center;">
+                  <div style="margin-bottom: 15px;">
+                    <ion-icon name="eye-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                  </div>
+                  
+                  <h3 class="project-title" style="margin-bottom: 10px;">Visualizing and Diagnosing Deep CNNs with DeconvNets</h3>
+                  
+                  <p class="project-category" style="margin-bottom: 15px; color: var(--light-gray-70);">Computer Vision | Deep Learning</p>
+                  
+                  <p style="color: var(--light-gray); font-size: 14px; line-height: 1.6; margin: 0;">
+                    This project focused on making deep convolutional neural networks (CNNs) more interpretable by developing a DeconvNet-based visualization framework. I implemented a custom deconvolutional network that projects intermediate feature maps back into input space, allowing visualization of how filters respond to specific image regions. Working with an 8-layer ImageNet-trained model (1.3M images), I achieved a 1.7% Top-5 accuracy improvement and a +19% boost in classification accuracy on Caltech datasets through transfer learning.
+                  </p>
+                  
+                  <p style="color: var(--light-gray-70); font-size: 12px; margin-top: 10px; margin-bottom: 0;">
+                    <strong>Tech Stack:</strong> Python, PyTorch, CUDA, ImageNet
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div style="padding: 30px; background: var(--eerie-black-2); border-radius: 16px; min-height: 200px; display: flex; flex-direction: column; justify-content: center;">
+                  <div style="margin-bottom: 15px;">
+                    <ion-icon name="layers-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                  </div>
+                  
+                  <h3 class="project-title" style="margin-bottom: 10px;">Semantic Segmentation with DeepLabv3</h3>
+                  
+                  <p class="project-category" style="margin-bottom: 15px; color: var(--light-gray-70);">Computer Vision | Semantic Segmentation</p>
+                  
+                  <p style="color: var(--light-gray); font-size: 14px; line-height: 1.6; margin: 0;">
+                    Implemented DeepLabv3, a state-of-the-art semantic segmentation model that classifies each pixel in an image. Using a ResNet-101 backbone, I integrated multi-grid atrous convolution and Atrous Spatial Pyramid Pooling (ASPP) to handle multi-scale context. Trained on PASCAL VOC 2012 dataset, these optimizations raised the mean Intersection-over-Union (mIoU) from 77.2% to 79.77%, all without relying on DenseCRF post-processing.
+                  </p>
+                  
+                  <p style="color: var(--light-gray-70); font-size: 12px; margin-top: 10px; margin-bottom: 0;">
+                    <strong>Tech Stack:</strong> TensorFlow, ResNet-101, Atrous Convolution, PASCAL VOC
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div style="padding: 30px; background: var(--eerie-black-2); border-radius: 16px; min-height: 200px; display: flex; flex-direction: column; justify-content: center;">
+                  <div style="margin-bottom: 15px;">
+                    <ion-icon name="chatbubbles-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                  </div>
+                  
+                  <h3 class="project-title" style="margin-bottom: 10px;">Fine-Tuned BERT for Movie Review Sentiment Classification</h3>
+                  
+                  <p class="project-category" style="margin-bottom: 15px; color: var(--light-gray-70);">NLP | Transfer Learning</p>
+                  
+                  <p style="color: var(--light-gray); font-size: 14px; line-height: 1.6; margin: 0;">
+                    Explored transfer learning for NLP through fine-tuning a BERT model on the IMDB sentiment analysis dataset. I implemented Parameter-Efficient Fine-Tuning (PEFT) with Low-Rank Adaptation (LoRA) to reduce trainable parameters and memory footprint. Fine-tuned using cross-entropy loss and achieved an 85% classification accuracy, showcasing how lightweight adaptation techniques can maintain strong performance while dramatically reducing computational costs.
+                  </p>
+                  
+                  <p style="color: var(--light-gray-70); font-size: 12px; margin-top: 10px; margin-bottom: 0;">
+                    <strong>Tech Stack:</strong> PyTorch, Transformers, PEFT, NumPy
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div style="padding: 30px; background: var(--eerie-black-2); border-radius: 16px; min-height: 200px; display: flex; flex-direction: column; justify-content: center;">
+                  <div style="margin-bottom: 15px;">
+                    <ion-icon name="videocam-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                  </div>
+                  
+                  <h3 class="project-title" style="margin-bottom: 10px;">DenseIL for Video-based Person Re-Identification</h3>
+                  
+                  <p class="project-category" style="margin-bottom: 15px; color: var(--light-gray-70);">Computer Vision | Video Analysis</p>
+                  
+                  <p style="color: var(--light-gray); font-size: 14px; line-height: 1.6; margin: 0;">
+                    Tackled person re-identification (Re-ID) in videos — matching individuals across multiple cameras despite changes in pose, lighting, and viewpoint. Designed a hybrid CNN-Transformer architecture named Dense Interaction Learning (DenseIL), which employs Dense Attention and a Spatial-Temporal Embedding Projection (STEP-Emb) module. Achieved mAP: 87.0% / Rank-1: 90.8% on MARS and mAP: 97.1% on DukeMTMC — a +4.9% mAP gain over baselines.
+                  </p>
+                  
+                  <p style="color: var(--light-gray-70); font-size: 12px; margin-top: 10px; margin-bottom: 0;">
+                    <strong>Tech Stack:</strong> PyTorch, ResNet-50, Transformers, MARS, DukeMTMC
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div style="padding: 30px; background: var(--eerie-black-2); border-radius: 16px; min-height: 200px; display: flex; flex-direction: column; justify-content: center;">
+                  <div style="margin-bottom: 15px;">
+                    <ion-icon name="cube-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                  </div>
+                  
+                  <h3 class="project-title" style="margin-bottom: 10px;">Multi-Modal Data Fusion for Model Training</h3>
+                  
+                  <p class="project-category" style="margin-bottom: 15px; color: var(--light-gray-70);">Multi-Modal Learning | Deep Learning</p>
+                  
+                  <p style="color: var(--light-gray); font-size: 14px; line-height: 1.6; margin: 0;">
+                    Combined text and image modalities to improve classification accuracy in multi-modal learning tasks. Developed a fusion architecture that extracted Transformer-based embeddings for text and CNN-based embeddings for images, integrating them using feature concatenation and cross-attention mechanisms. Trained on MS-COCO and Flickr30k datasets, the system achieved a 0.78 macro F1-score and a 15% improvement in precision compared to unimodal baselines.
+                  </p>
+                  
+                  <p style="color: var(--light-gray-70); font-size: 12px; margin-top: 10px; margin-bottom: 0;">
+                    <strong>Tech Stack:</strong> PyTorch, HuggingFace Transformers, OpenCV
                   </p>
                 </div>
 
