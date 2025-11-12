@@ -42,12 +42,21 @@
       white-space: nowrap !important;
       overflow: visible !important;
       text-overflow: clip !important;
-      padding: 20px 10px !important;
+      padding: 20px 12px !important;
+      min-width: fit-content !important;
+      width: auto !important;
+      max-width: none !important;
     }
     
     .navbar-list {
       flex-wrap: wrap !important;
-      gap: 5px !important;
+      gap: 8px !important;
+      justify-content: center !important;
+      padding: 0 15px !important;
+    }
+    
+    .navbar-item {
+      flex-shrink: 0 !important;
     }
     
     /* Fix article title alignment */
@@ -56,11 +65,20 @@
       word-wrap: break-word !important;
       overflow: visible !important;
       width: 100% !important;
+      max-width: 100% !important;
     }
     
     .h2 {
       overflow: visible !important;
       text-overflow: clip !important;
+      white-space: normal !important;
+      word-wrap: break-word !important;
+    }
+    
+    /* Ensure navbar has enough space */
+    .navbar {
+      padding: 0 10px !important;
+      min-height: auto !important;
     }
     
     @media (min-width: 768px) {
@@ -73,7 +91,24 @@
       }
       
       .navbar-link {
-        padding: 20px 15px !important;
+        padding: 20px 18px !important;
+      }
+      
+      .navbar-list {
+        gap: 15px !important;
+        padding: 0 25px !important;
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .navbar-link {
+        font-size: 13px !important;
+        padding: 18px 8px !important;
+      }
+      
+      .navbar-list {
+        gap: 4px !important;
+        padding: 0 10px !important;
       }
     }
   </style>
