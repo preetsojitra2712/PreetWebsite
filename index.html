@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
-    - custom styles for Engineering Notes readability
+    - custom styles for Engineering Notes readability and alignment fixes
   -->
   <style>
     .blog-text {
@@ -37,6 +37,32 @@
       margin-bottom: 30px;
     }
     
+    /* Fix navbar text alignment and wrapping */
+    .navbar-link {
+      white-space: nowrap !important;
+      overflow: visible !important;
+      text-overflow: clip !important;
+      padding: 20px 10px !important;
+    }
+    
+    .navbar-list {
+      flex-wrap: wrap !important;
+      gap: 5px !important;
+    }
+    
+    /* Fix article title alignment */
+    .article-title {
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      overflow: visible !important;
+      width: 100% !important;
+    }
+    
+    .h2 {
+      overflow: visible !important;
+      text-overflow: clip !important;
+    }
+    
     @media (min-width: 768px) {
       .blog-text {
         font-size: 17px !important;
@@ -44,6 +70,10 @@
       
       .blog-content {
         padding: 40px !important;
+      }
+      
+      .navbar-link {
+        padding: 20px 15px !important;
       }
     }
   </style>
